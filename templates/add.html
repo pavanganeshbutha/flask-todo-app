@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} ADD ITEM {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1>ADD ITEM</h1>
+    <form method="post" action="{{ url_for('add_item') }}">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="new_item" placeholder="New Item">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

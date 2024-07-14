@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} EDIT ITEM {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1>EDIT ITEM</h1>
+    <form method="post" action="/edit/{{id}}">
+        <div class="mb-3">
+            <input type="text" class="form-control" name="edit_item" value="{{ items[id] }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
